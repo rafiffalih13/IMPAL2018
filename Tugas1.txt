@@ -1,0 +1,69 @@
+#TABLE
+CREATE TABLE user (
+	username VARCHAR(50) NOT NULL PRIMARY KEY,
+	password VARCHAR(16) NOT NULL,
+	nama VARCHAR(50),
+	no_hp VARCHAR(16)
+);
+
+CREATE TABLE pemilik (
+	pemilik.username VARCHAR(50) NOT NULL,
+	PRIMARY KEY (pemilik.username),
+	CONSTRAINT fk_pemilik.username FOREIGN KEY (pemilik.username) REFERENCES user(username)
+	
+);
+
+CREATE TABLE partner (
+	partner.username VARCHAR(50) NOT NULL,
+	partner.nama_toko VARCHAR(50),
+	partner.alamat_toko VARCHAR(200),
+	pemilik.username VARCHAR(50),
+	PRIMARY KEY (partner.username),
+	CONSTRAINT fk_partner.username FOREIGN KEY (partner.username) REFERENCES user(username),
+	CONSTRAINT fk_pemilik.username FOREIGN KEY (pemilik.username) REFERENCES pemilik(pemilik.username)
+);
+
+CREATE TABLE admin (
+	admin.username VARCHAR(50) NOT NULL,
+	pemilik.username VARCHAR(50),
+	PRIMARY KEY (admin.username),
+	CONSTRAINT fk_admin.username FOREIGN KEY (admin.username) REFERENCES user(username)
+	CONSTRAINT fk_pemilik.username FOREIGN KEY (pemilik.username) REFERENCES pemilik(pemilik.username)
+);
+
+CREATE TABLE barang (
+	kode_barang VARCHAR(50) NOT NULL PRIMARY KEY,
+	Rasa VARCHAR(16) NOT NULL,
+	username.admin VARCHAR(50),
+	username.pemilik VARCHAR(50),
+	CONSTRAINT fk_admin.username FOREIGN KEY (admin.username) REFERENCES admin(admin.username),
+	CONSTRAINT fk_pemilik.username FOREIGN KEY (pemilik.username) REFERENCES pemilik(pemilik.username)
+);
+
+CREATE TABLE menjual (
+	id_penjualan VARCHAR(50) NOT NULL PRIMARY KEY,
+	jumlah VARCHAR(16) NOT NULL,
+	username.partner VARCHAR(50),
+	kode_barang VARCHAR(50)
+	CONSTRAINT fk_partner.username FOREIGN KEY (partner.username) REFERENCES partner(partner.username),
+	CONSTRAINT fk_kode_barang FOREIGN KEY (kode_barang) REFERENCES barang(kode_barang)
+);
+
+#SELECT
+SELECT * FROM partner WHERE username = $username;
+SELECT * FROM admin WHERE username =$username;
+Select * FROM pemilik WHERE username = username AND password = $password;
+Select * FROM admin WHERE username = username AND password = $password;
+Select * FROM partner WHERE username = $username AND password = $password;
+SELECT * FROM stock;
+SELECT * FROM stock WHERE username=$username;
+SELECT * FROM stock WHERE username=$username ORDER BY kode_barang ASC;
+SELECT * FROM stock WHERE username=$username ORDER BY kode_barang DSC;
+
+
+#INSERT
+INSERT INTO partner(username, password, nama,nama_toko, alamat_toko, no_hp) VALUES ($username, $password, $nama, $nama_toko, $alamat_toko, $no_hp);
+INSERT INTO admin (username, password, nama,no_hp) VALUES ($username, $password, $nama,$no_hp);
+INSERT INTO stock (kode_barang, jumlah, rasa, username_partner) VALUES (NULL, $jumlah, $rasa, $username_partner);
+
+ 
