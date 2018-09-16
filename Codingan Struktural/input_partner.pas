@@ -34,9 +34,9 @@ begin
 		writeln;
 		write('Input Username    : ');
 		readln(username);
-		write('Input nama Toko    : ');
+		write('Input Nama Toko    : ');
 		readln(nama);
-		write('Input alamat Toko         : ');
+		write('Input Alamat Toko         : ');
 		readln(alamat);
 		
 		
