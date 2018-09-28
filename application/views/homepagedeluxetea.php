@@ -27,7 +27,7 @@
 		</ul>
 	</div>
 	<div class="post-thumb">
-       	<img class="gambar" src=<?php echo base_url()?>assets/images/deluxetea.png />
+       	<img class="gambar" src="<?php echo base_url();?>assets/images/deluxetea.png"/>
 	</div>
 </div>
 </body>
