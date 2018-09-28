@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<h3><title> DELUXE TEA</title><h3>	
-	<link rel="stylesheet" type="text/css" href=<?php echo base_url()?>assets/css/desain.css>
-	<link rel="stylesheet" type="text/css" href=<?php echo base_url()?>assets/vendor/bootstrap2/bootstrap.css>
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/desain.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/vendor/bootstrap2/bootstrap.css">
 </head>
 
 <body>
