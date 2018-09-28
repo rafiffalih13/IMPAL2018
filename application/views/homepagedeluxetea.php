@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<h3><title> DELUXE TEA</title><h3>	
-	<link rel="stylesheet" type="text/css" href=<?php echo base_url()?>asset/css/desain.css>
-	<link rel="stylesheet" type="text/css" href=<?php echo base_url()?>asset/css/bootstrap.css>
+	<link rel="stylesheet" type="text/css" href=<?php echo base_url()?>assets/css/desain.css>
+	<link rel="stylesheet" type="text/css" href=<?php echo base_url()?>assets/vendor/bootstrap2/bootstrap.css>
 </head>
 
 <body>
@@ -27,7 +27,7 @@
 		</ul>
 	</div>
 	<div class="post-thumb">
-       	<img class="gambar" src=<?php echo base_url()?>asset/image/ponyyyy.jpg />
+       	<img class="gambar" src=<?php echo base_url()?>assets/images/deluxetea.png />
 	</div>
 </div>
 </body>
