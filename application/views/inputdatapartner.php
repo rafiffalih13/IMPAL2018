@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<h3><title> DELUXE TEA</title><h3>	
-	<link rel="stylesheet" type="text/css"  href=<?php echo base_url()?>assets/css/inputdatapartner.css>
-	<link rel="stylesheet" type="text/css" href=<?php echo base_url()?>assets/vendor/bootstrap2/bootstrap.css>
+	<link rel="stylesheet" type="text/css"  href="<?php echo base_url();?>assets/css/inputdatapartner.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/vendor/bootstrap2/bootstrap.css">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
 <div class="list-blog single-post d-sm-flex wow fadeInUpBig">
 	<div id="content">
 		<ul>
-		<li><img class="gambar" src=<?php echo base_url()?>asset/images/deluxetea.png /></li>
+		<li><img class="gambar" src="<?php echo base_url();?>assets/images/deluxetea.png"/></li>
 		<li><a href="#">Lihat Data Stock</a></li>
 		<li><a href="#">Input Stock</a></li>
 		<li><a href="#">Update Stock</a></li>
