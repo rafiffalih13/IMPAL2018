@@ -30,7 +30,7 @@
 
 <div class="main">
       
-       	 <form  method="get" action="inpudatapartner.php" id="form">
+       	 <form  method="get" action="action=<?php echo base_url(). 'index.php/c_input_partner/simpanPartner';?>" id="form">
        		<label>Username :</label>
 			<input type="text" name="username" id="username" />
 			
@@ -47,7 +47,7 @@
 			<input type="text" name="nohp" id="nohp" />
 
 			<label>Nama Toko :</label>
-			<input type="text" name="nohp" id="nohp" />
+			<input type="text" name="nohp" id="namatoko" />
 
 			<div class="submit">
 			<input type="submit" name="submit" id="submit" value="Submit">

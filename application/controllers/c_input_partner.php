@@ -12,13 +12,8 @@
 		}
 
 		public function index(){
-			$this->load->view("v_pilih");
+			$this->load->view("inputdatapartner");
 		}
-
-		public function v_partner(){
-			$this->load->view("v_daftarpartner");
-		}
-
 
 		function simpanPartner(){
 			$username = $this->input->post('username');
