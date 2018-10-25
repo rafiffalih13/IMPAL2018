@@ -194,7 +194,7 @@ iframe {
   
   padding: 55px 55px 37px 55px;
 
-  background: #f2f2f2;
+  background: #ffffff;
   
 }
 
@@ -249,7 +249,7 @@ iframe {
 .input100 {
   font-family: Poppins-Regular;
   font-size: 16px;
-  color: #808080;
+  color: #000000;
   line-height: 1.2;
 
   display: block;
@@ -280,6 +280,7 @@ iframe {
   width: 0;
   height: 2px;
 
+
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -291,7 +292,7 @@ iframe {
 .focus-input100::after {
   font-family: Material-Design-Iconic-Font;
   font-size: 22px;
-  color: #f2f2f2;
+  color: #000000;
 
   content: attr(data-placeholder);
   display: block;

@@ -32,37 +32,16 @@
 	<div class="limiter">
 		<div class="container-login100" style="">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form">
-					<span class="login100-form-logo">
-						<i class="zmdi zmdi-landscape"></i>
-					</span>
+				<span>
+					<img src="<?php echo base_url();?>assets/images/deluxetea.png">
+				</span>
 
-					<span class="login100-form-title p-b-34 p-t-27">
+				<span class="login100-form-title p-b-34 p-t-27">
 					
-					</span>
-					
-
-					<div class="wrap-input100 validate-input" data-validate = "Enter username">
-						<input class="input100" type="text" name="username" placeholder="Username" required>
-						<span class="focus-input100" data-placeholder="&#xf207;"></span>
-					</div>
-					<br>
-					
-					<div class="wrap-input100 validate-input" data-validate="Enter password">
-						<input class="input100" type="password" name="pass" placeholder="Password" required>
-						<span class="focus-input100" data-placeholder="&#xf191;"></span>
-					</div>
-
-					
-
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							Login
-						</button>
-					</div>
-
-					
-				</form>
+				</span>
+				<?php echo form_open('welcome/login');?>
+				<p> Error Login </p>
+				<a href="<?php echo site_url('welcome/index') ?>">Try Again</a>
 			</div>
 		</div>
 	</div>
