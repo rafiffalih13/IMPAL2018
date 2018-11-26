@@ -17,8 +17,7 @@ class Welcome extends CI_Controller {
 		$this->load->view('v_login');
 	}
 
-	public function login() {
-			
+	public function login() {			
 			
 			// create the data object
 			$data = new stdClass();
@@ -61,7 +60,7 @@ class Welcome extends CI_Controller {
 					$data->error = 'Wrong username or password.';
 					
 					// send error to the view
-					redirect('c_home/index');
+					redirect('c_login/index');
 					
 				}
 				

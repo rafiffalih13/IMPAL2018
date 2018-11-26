@@ -12,7 +12,7 @@
 		}
 
 		public function index(){
-			$this->load->view("inputdatapartner");
+			$this->load->view("v_inputdatapartner");
 		}
 
 		function simpanPartner(){

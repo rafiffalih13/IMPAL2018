@@ -12,9 +12,6 @@
 		}
 
 		public function index(){
-			$this->load->view('v_homepagedeluxetea');
-		}
-		public function pil1(){
 			$this->load->view('v_inputstock');
 		}
 	}
