@@ -8,15 +8,19 @@
 </head>
 
 <body>
-<div id="header">
+	 <?php 
+    include_once("navbar.php");
+    include_once ("sidebar.php");
+  ?>
+<!-- <div id="header">
 	<h3><a href="" class="title" style="color: #F0FFFF; font-family: arial,verdana,sans-serif; position: relative;">Deluxe Tea Real-time Stock Management</a><h3>
 	<div class=logout></div>
-</div>
+</div> -->
 
-<div class="list-blog single-post d-sm-flex wow fadeInUpBig">
+<!-- <div class="list-blog single-post d-sm-flex wow fadeInUpBig">
 	<div id="content">
 		<ul>
-		<li><img class="gambar" src="<?php echo base_url();?>assets/images/deluxetea.png"/></li>
+		<li><img class="gambar" src="<?php //echo base_url();?>assets/images/deluxetea.png"/></li>
 		<li><a href="#">Lihat Data Stock</a></li>
 		<li><a href="#">Input Stock</a></li>
 		<li><a href="#">Update Stock</a></li>
@@ -26,7 +30,7 @@
 		<li><a href="#">Input Data Admin</a></li>
 		<li><a href="#">Delete Admin</a></li>
 		</ul>
-	</div>
+	</div> -->
 
 <div class="main">
       
