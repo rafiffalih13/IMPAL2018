@@ -8,7 +8,11 @@
 </head>
 
 <body>
-<div id="header">
+	<?php 
+    include_once("navbar.php");
+    include_once ("sidebar.php");
+  ?>
+<!-- <div id="header">
 	<h3><a href="" class="title" style="color: #F0FFFF; font-family: arial,verdana,sans-serif; position: relative;">Deluxe Tea Real-time Stock Management</a><h3>
 	<div class=logout></div>
 </div>
@@ -27,7 +31,7 @@
 		<li><a href="#">Delete Admin</a></li>
 		</ul>
 	</div>
-
+ -->
 <div class="main">
       
        	 <form  method="get" action="action=<?php echo base_url(). 'index.php/c_input_partner/simpanPartner';?>" id="form">
