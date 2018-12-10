@@ -18,25 +18,25 @@
 			$this->load->view('v_inputstock');
 		}
 		public function deleteadmin(){
-			$this->load->view('v_inputstock');
+			$this->load->view('v_deleteadmin');
 		}
 		public function inputadmin(){
-			$this->load->view('v_inputstock');
+			$this->load->view('v_inputadmin');
 		}
 		public function deletepartner(){
-			$this->load->view('v_inputstock');
+			$this->load->view('v_deletepartner');
 		}
 		public function editpartner(){
-			$this->load->view('v_inputstock');
+			$this->load->view('v_editpartner');
 		}
 		public function inputpartner(){
-			$this->load->view('v_inputstock');
+			$this->load->view('v_inputpartner');
 		}
 		public function updatestock(){
-			$this->load->view('v_inputstock');
+			$this->load->view('v_updatestock');
 		}
 		public function lihatstock(){
-			$this->load->view('v_inputstock');
+			$this->load->view('v_lihatstock');
 		}
 	}
 ?>
