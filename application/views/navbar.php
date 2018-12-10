@@ -29,7 +29,7 @@
     
     <nav class="navbar text-white fixed-top navbar-expand-lg navbar-info bg-info fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">DELUXE TEA REAL-TIME STOCK MANAGEMENT</a>
+        <a class="navbar-brand" href="index.html" style="color: #ffffff">DELUXE TEA REAL-TIME STOCK MANAGEMENT</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="coba fa fa-reorder"></span>
         </button>
@@ -41,13 +41,12 @@
           <ul class="navbar-nav ml-auto samping">
             
             <li class="nav-item dropdown kiri">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ffffff">
                  Akun
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
                 <a class="dropdown-item" href="#"><?php echo $this->session->userdata('username'); ?></a>
-                <a class="dropdown-item" href="<?php echo site_url('c_inputBarang/index') ?>">Input Barang</a> 
-                <a class="dropdown-item" href="<?php echo site_url('c_home/logout') ?>">Logout</a> 
+                <a class="dropdown-item" href="<?php echo site_url('c_logout/index') ?>">Logout</a> 
               </div>
             </li>
             <li class="nav-item" style="margin-left: 15px"><a href="#" style="word-spacing: 3px" class="nav-link"><span> </span><span>  </span><span>  </span></a></li>
