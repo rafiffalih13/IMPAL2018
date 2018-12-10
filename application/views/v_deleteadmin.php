@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+  <!-- <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
     <div class="container"> <button class="navbar-toggler navbar-toggler-right border-0 p-0" type="button" data-toggle="collapse" data-target="#navbar14">
         <p class="navbar-brand mb-0 text-white">
           <i class="fa d-inline fa-lg fa-stop-circle"></i> BRAND </p>
@@ -29,11 +29,15 @@
         <a class="btn btn-default navbar-btn text-light"><i class="fa fa-user fa-fw"></i>LogOut</a>
       </div>
     </div>
-  </nav>
+  </nav> -->
+  <?php 
+    include_once("navbar.php");
+    include_once ("sidebar.php");
+  ?>
   <div class="py-0">
     <div class="container-fluid">
       <div class="row">
-        <div class="" style="">
+        <!-- <div class="" style="">
           <div id="content">
             <div class="card bg-light">
               <div class="card-body"><img class="d-block img-thumbnail mx-auto img-fluid" src="../Asset 1@4x.png" width="170"></div>
@@ -48,7 +52,7 @@
               <li class="nav-item bg-primary"> <a class="nav-link" href="inputstock.html">Input Stock</a> </li>
               <li class="nav-item bg-primary"> <a class="nav-link" href="lihatdatastock.html">Lihat Data Stock</a> </li>
           </div>
-        </div>
+        </div> -->
         <div class="col-9" style="">
           <div class="row">
             <div class="col-md-12">
