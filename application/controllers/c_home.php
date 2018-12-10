@@ -14,7 +14,28 @@
 		public function index(){
 			$this->load->view('v_homepagedeluxetea');
 		}
-		public function pil1(){
+		public function inputstock(){
+			$this->load->view('v_inputstock');
+		}
+		public function deleteadmin(){
+			$this->load->view('v_inputstock');
+		}
+		public function inputadmin(){
+			$this->load->view('v_inputstock');
+		}
+		public function deletepartner(){
+			$this->load->view('v_inputstock');
+		}
+		public function editpartner(){
+			$this->load->view('v_inputstock');
+		}
+		public function inputpartner(){
+			$this->load->view('v_inputstock');
+		}
+		public function updatestock(){
+			$this->load->view('v_inputstock');
+		}
+		public function lihatstock(){
 			$this->load->view('v_inputstock');
 		}
 	}
