@@ -14,7 +14,15 @@
 </div> -->
 <?php 
     include_once("navbar.php");
-    include_once ("sidebar.php");
+    if((substr(($this->session->userdata('username'), 0, 3) === 'pml')) ){
+        include_once("sidebar.php");
+        
+      }else if ((substr(($this->session->userdata('username'), 0, 3) === 'adm')) ){
+        include_once("sibaradmin.php");
+        
+      } else {
+        include_once("sidebarpartner.php");
+      }
   ?>
 
 <div class="list-blog single-post d-sm-flex wow fadeInUpBig">

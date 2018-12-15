@@ -11,7 +11,15 @@
 <body>
   <?php 
     include_once("navbar.php");
-    include_once ("sidebar.php");
+    if((substr(($this->session->userdata('username'), 0, 3) === 'pml')) ){
+        include_once("sidebar.php");
+        
+      }else if ((substr(($this->session->userdata('username'), 0, 3) === 'adm')) ){
+        include_once("sibaradmin.php");
+        
+      } else {
+        include_once("sidebarpartner.php");
+      }
   ?>
   <div class="isi">
     <div class="col-9" style="">

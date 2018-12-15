@@ -11,7 +11,15 @@
 <body>
   <?php 
     include_once("navbar.php");
-    include_once ("sidebar.php");
+    if((substr(($this->session->userdata('username'), 0, 3) === 'pml')) ){
+        include_once("sidebar.php");
+        
+      }else if ((substr(($this->session->userdata('username'), 0, 3) === 'adm')) ){
+        include_once("sibaradmin.php");
+        
+      } else {
+        include_once("sidebarpartner.php");
+      }
   ?>
   <!-- <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
     <div class="container"> <button class="navbar-toggler navbar-toggler-right border-0 p-0" type="button" data-toggle="collapse" data-target="#navbar14">
