@@ -14,7 +14,7 @@
 </div> -->
 <?php 
     include_once("navbar.php");
-    if((substr(($this->session->userdata('username'), 0, 3) === 'pml')) ){
+    if((substr(($this->session->userdata('username'), 0, 3) === 'own')) ){
         include_once("sidebar.php");
         
       }else if ((substr(($this->session->userdata('username'), 0, 3) === 'adm')) ){
