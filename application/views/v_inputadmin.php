@@ -126,7 +126,7 @@
                   </div> -->
 
               <div class="container-login100-form-btn">
-                <button class="login100-form-btn" type="submit">
+                <button class="btn btn-primary btn-block shadow" type="submit">
                   Submit
                 </button>
               </div>
