@@ -44,7 +44,7 @@
 <div class="main">
       
        	 <form  method="get" action="action=<?php echo base_url(). 'index.php/c_input_partner/simpanPartner';?>" id="form">
-       		<label>Username :</label>
+       		<label>Username : </label>
 			<input type="text" name="username" id="username" />
 			
 			<label>Password :</label>
