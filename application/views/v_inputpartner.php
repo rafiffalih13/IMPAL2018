@@ -80,20 +80,53 @@
           <div class="row">
             <div class="col-md-12">
               <?php echo form_open('c_inputpartner/inputpartner');?>
-            <form class="login100-form validate-form" method="POST" action="<?php echo base_url(). 'index.php/c_inputpartner/inputpartner'; ?>">
-              <div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
-                <span class="label-input100">Username</span>
-                <input class="input100" type="text" name="username" id="username" placeholder="Enter username">
+            <form id="c_form-h" method="POST" action="<?php echo base_url(). 'index.php/c_inputpartner/inputpartner'; ?>">
+              <!-- <div class="form-group-row" data-validate="Username is required">
+                <label for="username" class="col-2 col-form-label pl-4">Username</label>
+                <span class="col-2 col-form-label pl-4">Username</span>
+                <div class="col-10 col-md-8" style="">
+                  <input type="text" class="form-control" name="username" id="username" placeholder="Enter username">
+                </div>
+
+
                 <span class="focus-input100"></span>
+              </div> -->
+              <div class="form-group row"> 
+                <label for="username" class="col-3 col-form-label pl-4" style="">Username <label for="username"  style="padding-left: 66px;">usr_</label></label>
+                  <div class="col-10 col-md-8" style="">
+                    <input type="text" name="username" id="username" class="form-control" placeholder="Enter Username"> 
+                  </div>
+              </div>
+              <div class="form-group row"> <label for="pass" class="col-3 col-form-label pl-4" style="">Password</label>
+                  <div class="col-10 col-md-8" style="">
+                    <input type="password" class="form-control" name="pass" id="pass" placeholder="Enter Password"> </div>
               </div>
 
-              <div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
+
+             <!--  <div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
                 <span class="label-input100">Password</span>
                 <input class="input100" type="password" name="pass" id="pass" placeholder="Enter password">
                 <span class="focus-input100"></span>
+              </div> -->
+              <div class="form-group row"> <label for="nama" class="col-3 col-form-label pl-4" style="">Nama</label>
+                  <div class="col-10 col-md-8" style="">
+                    <input type="text" class="form-control" id="nama" name="nama" placeholder="Enter Full Name"> </div>
+              </div>
+              <div class="form-group row"> <label for="alamat" class="col-3 col-form-label pl-4" style="">Alamat</label>
+                  <div class="col-10 col-md-8" style="">
+                    <input type="text" class="form-control" name="alamat" id="alamat" placeholder="Enter Address"> </div>
+              </div>
+              <div class="form-group row"> <label for="no_hp" class="col-3 col-form-label pl-4" style="">No Hp</label>
+                  <div class="col-10 col-md-8" style="">
+                    <input type="text" class="form-control" name="no_hp" id="no_hp" placeholder="Enter Phone Number"> </div>
+              </div>
+              <div class="form-group row"> <label for="name" class="col-3 col-form-label pl-4" style="">Nama Toko</label>
+                  <div class="col-10 col-md-8" style="">
+                    <input type="text" class="form-control" id="toko" name="toko" placeholder="Enter Store Name"> </div>
               </div>
 
-              <div class="wrap-input100 validate-input m-b-26" data-validate="Nama is required">
+
+              <!-- <div class="wrap-input100 validate-input m-b-26" data-validate="Nama is required">
                 <span class="label-input100">Nama</span>
                 <input class="input100" type="text" name="nama" id="nama" placeholder="Enter Full Name">
                 <span class="focus-input100"></span>
@@ -115,10 +148,10 @@
                 <span class="label-input100">Nomor Handphone</span>
                 <input class="input100" type="text" name="no_hp" id="no_hp" placeholder="Enter Phone Number">
                 <span class="focus-input100"></span>
-              </div>
+              </div> -->
 
           <div class="container-login100-form-btn">
-            <button class="login100-form-btn" type="submit">
+            <button class="btn btn-primary btn-block shadow" type="submit">
               Submit
             </button>
           </div>
