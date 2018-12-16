@@ -80,31 +80,31 @@
           <div class="row">
             <div class="col-md-12">
               <form id="c_form-h" class="">
-                <div class="form-group row"> <label for="inputusername" class="col-2 col-form-label pl-4" style="">Username</label>
+                <div class="form-group row"> <label for="inputusername" class="col-3 col-form-label pl-4" style="">Username <label for="inputusername" style="padding-left: 66px;">usr_ </label> </label>
                   <div class="col-10 col-md-8" style="">
-                    <input type="text" class="form-control" id="inputusername"> </div>
+                    <input type="text" class="form-control" id="inputusername" style="margin-right: 50px; "> </div>
                 </div>
-                <div class="form-group row"> <label for="inputpassword" class="col-2 col-form-label pl-4" style="">Password</label>
+                <div class="form-group row"> <label for="inputpassword" class="col-3 col-form-label pl-4" style="">Password</label>
                   <div class="col-10 col-md-8" style="">
                     <input type="password" class="form-control" id="inputpassword"> </div>
                 </div>
               </form>
               <form id="c_form-h" class="">
-                <div class="form-group row"> <label for="inputnama" class="col-2 col-form-label pl-4" style="">Nama</label>
+                <div class="form-group row"> <label for="inputnama" class="col-3 col-form-label pl-4" style="">Nama</label>
                   <div class="col-10 col-md-8" style="">
                     <input type="text" class="form-control" id="inputnama"> </div>
                 </div>
-                <div class="form-group row"> <label for="inputalamat" class="col-2 col-form-label pl-4" style="">Alamat</label>
+                <div class="form-group row"> <label for="inputalamat" class="col-3 col-form-label pl-4" style="">Alamat Toko</label>
                   <div class="col-10 col-md-8" style="">
                     <input type="text" class="form-control" id="inputalamat"> </div>
                 </div>
               </form>
               <form id="c_form-h" class="">
-                <div class="form-group row"> <label for="inputhp" class="col-2 col-form-label pl-4" style="">No Hp</label>
+                <div class="form-group row"> <label for="inputhp" class="col-3 col-form-label pl-4" style="">No Hp</label>
                   <div class="col-10 col-md-8" style="">
                     <input type="text" class="form-control" id="inputhp"> </div>
                 </div>
-                <div class="form-group row"> <label for="inputnamatoko" class="col-2 col-form-label pl-4" style="">Nama Toko</label>
+                <div class="form-group row"> <label for="inputnamatoko" class="col-3 col-form-label pl-4" style="">Nama Toko</label>
                   <div class="col-10 col-md-8" style="">
                     <input type="text" class="form-control" id="inputnamatoko"> </div>
                 </div>
