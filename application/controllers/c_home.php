@@ -15,7 +15,7 @@
 			$this->load->view('v_homepagedeluxetea');
 		}
 		public function inputstock(){
-			$this->load->view('v_inputstock');
+			redirect('c_inputstock/index');
 		}
 		public function deleteadmin(){
 			$this->load->view('v_deleteadmin');
