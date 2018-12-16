@@ -35,8 +35,14 @@
 		public function updatestock(){
 			$this->load->view('v_updatestock');
 		}
+		public function updatestockpar(){
+			$this->load->view('v_updatestockpar');
+		}
 		public function lihatstock(){
 			$this->load->view('v_lihatstock');
+		}
+		public function lihatstockpar(){
+			$this->load->view('v_lihatstockpar');
 		}
 	}
 ?>

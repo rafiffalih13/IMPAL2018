@@ -33,7 +33,7 @@ class Welcome extends CI_Controller {
 			$this->load->library('form_validation');
 			
 			// set validation rules
-			$this->form_validation->set_rules('username', 'username', 'required|alpha_numeric');
+			//$this->form_validation->set_rules('username', 'username', 'required|alpha_numeric');
 			$this->form_validation->set_rules('pass', 'Pass', 'required');
 			
 			if ($this->form_validation->run() == false) {
@@ -67,10 +67,12 @@ class Welcome extends CI_Controller {
 					
 					// send error to the view
 					redirect('welcome/index');
-					
 				}
-				
 			}
-			
-		}
+	}
+	
+	function logout(){
+            $this->session->sess_destroy();
+            redirect('Welcome/index');
+    }
 }

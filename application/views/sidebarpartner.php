@@ -11,9 +11,9 @@
 	</div>
  	<ul class="nav nav-pills flex-column-reverse">
 		
-	    <li class="nav-item bg-primary"> <a class="nav-link" href="<?php echo site_url('c_home/updatestock') ?>">Update Stock</a> </li>
+	    <li class="nav-item bg-primary"> <a class="nav-link" href="<?php echo site_url('c_home/updatestockpar') ?>">Update Stock</a> </li>
 	    
-	    <li class="nav-item bg-primary"> <a class="nav-link" href="<?php echo site_url('c_home/lihatstockpartner') ?>">Lihat Data Stock</a> </li>
+	    <li class="nav-item bg-primary"> <a class="nav-link" href="<?php echo site_url('c_home/lihatstockpar') ?>">Lihat Data Stock</a> </li>
     </ul>
 </div>
 </body>

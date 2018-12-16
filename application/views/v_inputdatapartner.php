@@ -7,18 +7,19 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/vendor/bootstrap2/bootstrap.css">
 </head>
 
-<body>
+<body style="margin-left: 150px; margin-top: 80px">
 <!-- <div id="header">
 	<h3><a href="" class="title" style="color: #F0FFFF; font-family: arial,verdana,sans-serif; position: relative;">Deluxe Tea Real-time Stock Management</a><h3>
 	<div class=logout></div>
 </div> -->
 <?php 
     include_once("navbar.php");
-    if((substr(($this->session->userdata('username'), 0, 3) === 'own')) ){
+    $username =$this->session->userdata('username'); 
+      if((substr($username, 0, 3) === 'own')){
         include_once("sidebar.php");
         
-      }else if ((substr(($this->session->userdata('username'), 0, 3) === 'adm')) ){
-        include_once("sibaradmin.php");
+      }else if ((substr($username, 0, 3) === 'adm')){
+        include_once("sidebaradmin.php");
         
       } else {
         include_once("sidebarpartner.php");

@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="<?php echo base_url();?>assets/css/Untitled.css">
 </head>
 
-<body>
+<body style="margin-left: 150px; margin-top: 80px">
   <!-- <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
     <div class="container"> <button class="navbar-toggler navbar-toggler-right border-0 p-0" type="button" data-toggle="collapse" data-target="#navbar14">
         <p class="navbar-brand mb-0 text-white">
@@ -32,11 +32,12 @@
   </nav> -->
   <?php 
     include_once("navbar.php");
-    if((substr(($this->session->userdata('username'), 0, 3) === 'own')) ){
+    $username =$this->session->userdata('username'); 
+      if((substr($username, 0, 3) === 'own')){
         include_once("sidebar.php");
         
-      }else if ((substr(($this->session->userdata('username'), 0, 3) === 'adm')) ){
-        include_once("sibaradmin.php");
+      }else if ((substr($username, 0, 3) === 'adm')){
+        include_once("sidebaradmin.php");
         
       } else {
         include_once("sidebarpartner.php");

@@ -11,11 +11,12 @@
 <body>
   <?php 
     include_once("navbar.php");
-    if((substr(($this->session->userdata('username'), 0, 3) === 'own')) ){
+    $username =$this->session->userdata('username'); 
+      if((substr($username, 0, 3) === 'own')){
         include_once("sidebar.php");
         
-      }else if ((substr(($this->session->userdata('username'), 0, 3) === 'adm')) ){
-        include_once("sibaradmin.php");
+      }else if ((substr($username, 0, 3) === 'adm')){
+        include_once("sidebaradmin.php");
         
       } else {
         include_once("sidebarpartner.php");
