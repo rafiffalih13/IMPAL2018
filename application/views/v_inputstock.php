@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="<?php echo base_url();?>assets/css/Untitled.css">
 </head>
 
+
 <body>
   <?php 
     include_once("navbar.php");
@@ -81,8 +82,8 @@
                    <input type="number" class="form-control" name="jml" id="jml" placeholder="Jumlah stock" style="margin-left: -15px"> </div>
               </div>
               <div class="col-10 col-md-3" style="">
-              <button class="btn btn-primary btn-block shadow" type="submit" style="margin-left: 150px">Submit</button>
-            </div>
+                <button class="btn btn-primary btn-block shadow" type="submit" style="margin-left: 150px">Submit</button>
+              </div>
             </form>
             <!-- <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Partner-xxxx</button>
             <div class="dropdown-menu"> 
