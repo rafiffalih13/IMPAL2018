@@ -17,5 +17,10 @@
 	            return false;
 	        }
 	 	}
+
+	 	public function get_data_partner() {
+            $query = $this->db->query("SELECT username, namatoko FROM partner;");
+			return $query->result();
+        }
  	}
 ?>

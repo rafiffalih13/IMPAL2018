@@ -21,7 +21,7 @@
 			$this->load->view('v_deleteadmin');
 		}
 		public function inputadmin(){
-			$this->load->view('v_inputadmin');
+			redirect('c_inputadmin/index');
 		}
 		public function deletepartner(){
 			$this->load->view('v_deletepartner');
@@ -30,7 +30,7 @@
 			$this->load->view('v_editpartner');
 		}
 		public function inputpartner(){
-			$this->load->view('v_inputpartner');
+			redirect('c_inputpartner/index');
 		}
 		public function updatestock(){
 			$this->load->view('v_updatestock');

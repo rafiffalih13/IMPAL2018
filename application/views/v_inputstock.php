@@ -42,15 +42,57 @@
       <div class="row">
         <div class="col-md-12 pb-4">
           <div class="btn-group btn-group-lg pl-4">
-            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Partner-xxxx</button>
-            <div class="dropdown-menu"> <a class="dropdown-item" href="#">Pantner</a>
-              <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Partner</a>
+            <form method="POST" action="<?php echo base_url(). 'index.php/c_inputstock/inputstock'; ?>">
+              <div class="row" col-md-12>
+                <label style="font-size: 20px">Toko : </label>
+                <select class="form-control" id="toko" name="toko" style="width: 200px; margin-left: 20px">
+                  <option selected="true" disabled="disabled">Pilih Toko</option>
+                  <?php 
+                    foreach ($partner as $p ) { 
+                  ?>
+                  
+                  <option value="<?php echo $p->namatoko;?>"><?php echo $p->namatoko;?></option>
+                  
+                  <?php
+                    }
+                  ?>
+                </select>
+              </div>
+              <br>
+              <div class="row" col-md-12>
+                <label style="font-size: 20px">Rasa : </label>
+                <select class="form-control" id="rasa" name="rasa" style="width: 200px; margin-left: 20px">
+                  <option selected="true" disabled="disabled">Pilih Rasa</option>
+                  <?php 
+                    foreach ($stock as $s ) { 
+                  ?>
+                  
+                  <option value="<?php echo $s->rasa;?>"><?php echo $s->rasa;?></option>
+                  
+                  <?php
+                    }
+                  ?>
+                </select>
+              </div>
+              <br>
+             <div class="form-group row"> 
+              <label for="pass" style="font-size: 20px">Jumlah yang ingin didistribusikan</label>
+                <div class="col-10 col-md-7" style="">
+                   <input type="number" class="form-control" name="jml" id="jml" placeholder="Jumlah stock" style="margin-left: -15px"> </div>
+              </div>
+              <div class="col-10 col-md-3" style="">
+              <button class="btn btn-primary btn-block shadow" type="submit" style="margin-left: 150px">Submit</button>
             </div>
+            </form>
+            <!-- <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Partner-xxxx</button>
+            <div class="dropdown-menu"> 
+              <a class="dropdown-item" href="#">Pantner</a>
+              <a class="dropdown-item" href="#">Partner</a>
+            </div> -->
           </div>
         </div>
       </div>
-            <div class="row">
+            <!-- <div class="row">
               <div class="col-md-12">
                 <p class="lead">&nbsp; &nbsp; &nbsp; &nbsp;Rasa</p>
               </div>
@@ -67,24 +109,9 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-md-12">
-                <p class="lead">&nbsp; &nbsp; &nbsp; &nbsp;Jumlah yang ingin didistribusikan</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12 pb-2">
-                <form class="form-inline">
-                  <div class="input-group input-group-lg pl-4">
-                    <input type="text" class="form-control pl-4">
-                  </div>
-                </form>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-3"></div>
-              <div class="col-md-3"><a class="btn btn-primary shadow" href="#">Submit</a></div>
-              <div class="col-md-3"></div>
-              <div class="col-md-3"></div>
+              <div class="col-md-12"> -->
+                
+             
             </div>
           </div>
         </div>
