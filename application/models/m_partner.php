@@ -22,5 +22,12 @@
             $query = $this->db->query("SELECT username, namatoko FROM partner;");
 			return $query->result();
         }
+
+        public function delete($username){
+        	$this->db->where('username', $username);
+			$this->db->delete('partner');
+			$this->db->where('username', $username);
+			$this->db->delete('user');
+        }
  	}
 ?>

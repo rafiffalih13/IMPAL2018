@@ -18,13 +18,13 @@
 			redirect('c_inputstock/index');
 		}
 		public function deleteadmin(){
-			$this->load->view('v_deleteadmin');
+			redirect('c_deleteadmin/index');
 		}
 		public function inputadmin(){
 			redirect('c_inputadmin/index');
 		}
 		public function deletepartner(){
-			$this->load->view('v_deletepartner');
+			redirect('c_deletepartner/index');
 		}
 		public function editpartner(){
 			$this->load->view('v_editpartner');

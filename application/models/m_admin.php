@@ -17,5 +17,15 @@
 	            return false;
 	        }
 	 	}
+
+	 	public function get_data_admin() {
+            $query = $this->db->query("SELECT username, nama FROM user WHERE username LIKE 'adm_%';");
+			return $query->result();
+        }
+
+        public function delete($username){
+			$this->db->where('username', $username);
+			$this->db->delete('user');
+        }
  	}
 ?>

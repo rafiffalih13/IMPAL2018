@@ -81,41 +81,45 @@
           
           <div class="row">
             <div class="col-md-12">
-              <p class="lead">&nbsp; &nbsp; &nbsp; &nbsp;Pilih Username untuk dihapus</p>
+              <p class="lead">&nbsp; &nbsp; &nbsp; &nbsp;Pilih username admin untuk dihapus</p>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 pb-3">
-              <div class="btn-group btn-group-lg pl-4">
-                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Pilih Username&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</button>
-                <div class="dropdown-menu"> <a class="dropdown-item" href="#">Username</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Username</a>
-                </div>
+            <form method="POST" action="<?php echo base_url(). 'index.php/c_deleteadmin/delete'; ?>">
+              <div class="row" col-md-12>
+                <select class="form-control" id="username" name="username" style="width: 265px; margin-left: 70px">
+                  <option selected="true" disabled="disabled">Pilih username admin</option>
+                  <?php 
+                    foreach ($admin as $a ) { 
+                  ?>
+                  
+                  <option value="<?php echo $a->username;?>"><?php echo $a->username;?></option>
+                  
+                  <?php
+                    }
+                  ?>
+                </select>
               </div>
-            </div>
+              <br>
           </div>
           <div class="row">
             <div class="col-md-12">
               <p class="lead">&nbsp; &nbsp; &nbsp; &nbsp;Password</p>
+              <div class="col-10 col-md-4" style="">
+                   <input type="Password" class="form-control" name="pass" id="pass" placeholder="Password Pemilik" style="margin-left: 25px"> </div>
             </div>
           </div>
           <div class="row">
             <div class="col-md-12 pb-4">
-              <form class="form-inline">
-                <div class="input-group input-group-lg pl-4">
-                  <input type="password" class="form-control pl-4 mr-3">
-                </div>
-              </form>
+              
             </div>
           </div>
           <div class="row">
             <div class="col-md-3"></div>
-            <div class="col-md-3"><a class="btn btn-primary shadow active btn-lg" href="#">Delete</a></div>
+            <div class="col-md-2"><button class="btn btn-primary btn-block shadow" type="submit" style="margin-left: 5px">Hapus</button></div>
             <div class="col-md-3"></div>
             <div class="col-md-3"></div>
           </div>
         </div>
+      </form>
       </div>
     </div>
   </div>

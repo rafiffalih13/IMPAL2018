@@ -34,7 +34,7 @@
           </div>
           <div class="row">
             <div class="col-md-12 pb-2">
-              <h3 contenteditable="true">- Input Stock -</h3>
+              <h3 contenteditable="false">- Input Stock -</h3>
             </div>
           </div>
         </div>

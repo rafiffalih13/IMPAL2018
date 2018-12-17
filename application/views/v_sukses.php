@@ -78,7 +78,7 @@
               </div>
               <div class="row">
                 <div class="col-md-12 pb-2">
-                  <h3 class="pb-3">Data Berhasil di input</h3>
+                  <h3 class="pb-3">Proses Berhasil</h3>
                 </div>
               </div>
             </div>

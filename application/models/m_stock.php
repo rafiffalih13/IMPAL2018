@@ -21,5 +21,12 @@
 		    }
 		    return false;
         }
+
+        public function delete($namatoko){
+        	$this->db->where('namatoko', $namatoko);
+			$this->db->delete('penjualan');
+        }
+
+        
  	}
 ?>
