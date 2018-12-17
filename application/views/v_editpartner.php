@@ -83,7 +83,35 @@
           <div class="row">
             <div class="col-md-12 pb-5">
               <div class="btn-group btn-group-lg pl-4">
-                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Partner-xxxx&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</button>
+                <form method="POST" action="<?php echo base_url(). 'index.php/c_inputstock/inputstock'; ?>">
+              <div class="row" col-md-12>
+                <label style="font-size: 20px">Toko : </label>
+                <select class="form-control" id="toko" name="toko" style="width: 200px; margin-left: 20px">
+                  <option selected="true" disabled="disabled">Pilih Toko</option>
+                  <?php 
+                    foreach ($partner as $p ) { 
+                  ?>
+                  
+                  <option value="<?php echo $p->namatoko;?>"><?php echo $p->namatoko;?></option>
+                  
+                  <?php
+                    }
+                  ?>
+                </select>
+              </div>
+              <br>
+              
+              <br>
+             <div class="form-group row"> 
+              <label for="pass" style="font-size: 20px; margin-right: 60px;">Password Baru</label>
+                <div class="col-10 col-md-9" style="">
+                   <input type="password" class="form-control" name="jml" id="jml" placeholder="Password Baru" style="margin-left: -15px"> </div>
+              </div>
+              <div class="col-10 col-md-4" style="">
+                <button class="btn btn-primary btn-block shadow" type="submit" style="margin-left: 145px">Submit</button>
+              </div>
+            </form>
+                <!-- <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Partner-xxxx&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</button>
                 <div class="dropdown-menu"> <a class="dropdown-item" href="#">Partner</a>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="#">Partner</a>
@@ -112,7 +140,7 @@
             <div class="col-md-3"><a class="btn btn-primary shadow active btn-lg" href="#">Update</a></div>
             <div class="col-md-3"></div>
             <div class="col-md-3"></div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
