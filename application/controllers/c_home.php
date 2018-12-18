@@ -15,25 +15,25 @@
 			$this->load->view('v_homepagedeluxetea');
 		}
 		public function inputstock(){
-			redirect('c_inputstock/index');
+			redirect('pemilikController/v_inputstock');
 		}
 		public function deleteadmin(){
-			redirect('c_deleteadmin/index');
+			redirect('pemilikController/v_deleteadmin');
 		}
 		public function inputadmin(){
-			redirect('c_inputadmin/index');
+			redirect('pemilikController/v_inputadmin');
 		}
 		public function deletepartner(){
-			redirect('c_deletepartner/index');
+			redirect('pemilikController/v_deletepartner');
 		}
 		public function editpartner(){
-			redirect('c_editpartner/index');
+			redirect('pemilikController/v_editpartner');
 		}
 		public function inputpartner(){
-			redirect('c_inputpartner/index');
+			redirect('pemilikController/v_inputpartner');
 		}
 		public function updatestock(){
-			redirect('c_updatestock/index');
+			redirect('pemilikController/v_updatestock');
 		}
 		public function updatestockpar(){
 			redirect('partnerController/v_updatestockpar');

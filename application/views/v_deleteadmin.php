@@ -83,7 +83,7 @@
             <div class="col-md-12">
               <p class="lead">&nbsp; &nbsp; &nbsp; &nbsp;Pilih username admin untuk dihapus</p>
             </div>
-            <form method="POST" action="<?php echo base_url(). 'index.php/c_deleteadmin/delete'; ?>">
+            <form method="POST" action="<?php echo base_url(). 'index.php/pemilikController/c_deleteadmin'; ?>">
               <div class="row" col-md-12>
                 <select class="form-control" id="username" name="username" style="width: 265px; margin-left: 70px">
                   <option selected="true" disabled="disabled">Pilih username admin</option>

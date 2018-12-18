@@ -79,7 +79,7 @@
           </div>
           <div class="row">
             <div class="col-md-12">
-              <?php echo form_open('c_inputpartner/inputpartner');?>
+              <?php echo form_open('pemilikController/c_inputpartner');?>
             <form id="c_form-h" method="POST" action="<?php echo base_url(). 'index.php/c_inputpartner/inputpartner'; ?>">
               <!-- <div class="form-group-row" data-validate="Username is required">
                 <label for="username" class="col-2 col-form-label pl-4">Username</label>

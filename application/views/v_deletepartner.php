@@ -84,7 +84,7 @@
             <div class="col-md-12">
               <p class="lead">&nbsp; &nbsp; &nbsp; &nbsp;Pilih nama toko untuk dihapus</p>
             </div>
-            <form method="POST" action="<?php echo base_url(). 'index.php/c_deletepartner/delete'; ?>">
+            <form method="POST" action="<?php echo base_url(). 'index.php/pemilikController/c_deletepartner'; ?>">
               <div class="row" col-md-12>
                 <select class="form-control" id="username" name="username" style="width: 265px; margin-left: 70px">
                   <option selected="true" disabled="disabled">Pilih Username</option>

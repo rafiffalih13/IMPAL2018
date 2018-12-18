@@ -81,7 +81,7 @@
           <div class="row">
             <div class="col-md-12">
               <?php echo form_open('c_inputadmin/inputadmin');?>
-                <form class="login100-form validate-form" method="POST" action="<?php echo base_url(). 'index.php/c_inputadmin/inputadmin'; ?>">
+                <form class="login100-form validate-form" method="POST" action="<?php echo base_url(). 'index.php/pemilikController/c_inputadmin'; ?>">
                   <div class="form-group row"> 
                     <label for="username" class="col-3 col-form-label pl-4" style="">Username <label for="username"  style="padding-left: 56px;">adm_</label></label>
                     <div class="col-10 col-md-8" style="">

@@ -83,7 +83,7 @@
           <div class="row">
             <div class="col-md-12 pb-5">
               <div class="btn-group btn-group-lg pl-4">
-                <form method="POST" action="<?php echo base_url(). 'index.php/c_editpartner/edit'; ?>">
+                <form method="POST" action="<?php echo base_url(). 'index.php/pemilikController/c_editpartner'; ?>">
               <div class="row" col-md-13>
                 <label style="font-size: 20px; margin-right: 590px">Username Partner</label>
                 <select class="form-control" id="username" name="username" style="width: 250px; margin-left:  px">
