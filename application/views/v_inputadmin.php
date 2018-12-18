@@ -124,12 +124,21 @@
                     <input class="input100" type="text" name="no_hp" id="no_hp" placeholder="Enter Phone Number">
                     <span class="focus-input100"></span>
                   </div> -->
+                  <div class="row">
+                  <div class="col-md-3"></div>
+                  <div class="col-md-3"></div>
+                  <div class="col-md-3"></div>
+                  <div class="col-md-2"><button class="btn btn-primary btn-block shadow" type="submit">
+                    Submit
+                  </button></div>
+                  </div>
 
-              <div class="container-login100-form-btn">
+
+              <!-- <div class="container-login100-form-btn">
                 <button class="btn btn-primary btn-block shadow" type="submit">
                   Submit
                 </button>
-              </div>
+              </div> -->
             </form>
             </div>
           </div>
