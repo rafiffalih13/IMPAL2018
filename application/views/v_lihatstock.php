@@ -82,16 +82,35 @@
           </div>
           <div class="row">
             <div class="col-md-3">
-              <div class="btn-group btn-group-lg pl-4">
-                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Partner-xxxx</button>
-                <div class="dropdown-menu"> <a class="dropdown-item" href="#">Partner</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Partner</a>
-                  <a class="dropdown-item" href="#">Partner2</a>
+              <form method="POST" action="<?php echo base_url(). 'index.php/pemilikController/v_lihatstock'; ?>">
+                <div class="row" col-md-12>
+                  <label style="font-size: 20px; margin-left: 40px">Toko : </label>
+                  <select class="form-control" id="toko" name="toko" style="width: 200px; margin-left: 45px;">
+                    <option selected="true" disabled="disabled">Pilih Toko</option>
+                    <?php 
+                      foreach ($partner as $p ) { 
+                    ?>
+                    
+                    <option value="<?php echo $p->namatoko;?>"><?php echo $p->namatoko;?></option>
+                    
+                    <?php
+                      }
+                    ?>
+                  </select>
                 </div>
-              </div>
+                <div class="col-10 col-md-6" style="">
+                  <button class="btn btn-primary btn-block shadow" type="submit" style="margin-left: 130px; margin-top: 15px">Cari</button>
+                </div>
+              </form>
+
             </div>
-            <div class="col-md-3"></div>
+            <div class="col-md-3">
+              <?php
+                if ($title='1') {
+                  include_once 'tabelview.php';
+                }
+              ?>
+            </div>
             <div class="col-md-3"></div>
             <div class="col-md-3"></div>
           </div>

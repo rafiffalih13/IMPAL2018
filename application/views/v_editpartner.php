@@ -83,16 +83,16 @@
           <div class="row">
             <div class="col-md-12 pb-5">
               <div class="btn-group btn-group-lg pl-4">
-                <form method="POST" action="<?php echo base_url(). 'index.php/c_inputstock/inputstock'; ?>">
-              <div class="row" col-md-12>
-                <label style="font-size: 20px">Toko : </label>
-                <select class="form-control" id="toko" name="toko" style="width: 200px; margin-left: 20px">
-                  <option selected="true" disabled="disabled">Pilih Toko</option>
+                <form method="POST" action="<?php echo base_url(). 'index.php/c_editpartner/edit'; ?>">
+              <div class="row" col-md-13>
+                <label style="font-size: 20px; margin-right: 590px">Username Partner</label>
+                <select class="form-control" id="username" name="username" style="width: 250px; margin-left:  px">
+                  <option selected="true" disabled="disabled">Pilih username partner</option>
                   <?php 
                     foreach ($partner as $p ) { 
                   ?>
                   
-                  <option value="<?php echo $p->namatoko;?>"><?php echo $p->namatoko;?></option>
+                  <option value="<?php echo $p->username;?>"><?php echo $p->username;?></option>
                   
                   <?php
                     }
@@ -103,12 +103,12 @@
               
               <br>
              <div class="form-group row"> 
-              <label for="pass" style="font-size: 20px; margin-right: 60px;">Password Baru</label>
-                <div class="col-10 col-md-9" style="">
-                   <input type="password" class="form-control" name="jml" id="jml" placeholder="Password Baru" style="margin-left: -15px"> </div>
+              <label for="pass" style="font-size: 20px; margin-right: 600px;">Password Baru</label>
+                <div class="col-10 col-md-4 style="">
+                   <input type="password" class="form-control" name="pass" id="pass" placeholder="Password Baru" style="margin-left: -15px"> </div>
               </div>
-              <div class="col-10 col-md-4" style="">
-                <button class="btn btn-primary btn-block shadow" type="submit" style="margin-left: 145px">Submit</button>
+              <div class="col-10 col-md-3" style="">
+                <button class="btn btn-primary btn-block shadow" type="submit" style="margin-left: 50px">Submit</button>
               </div>
             </form>
                 <!-- <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Partner-xxxx&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</button>

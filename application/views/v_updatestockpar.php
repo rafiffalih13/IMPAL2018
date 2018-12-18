@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="<?php echo base_url();?>assets/css/Untitled.css">
+  <style type="text/css">
+    .tg  {border-collapse:collapse;border-spacing:0;}
+    .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+    .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+    .tg .tg-baqh{text-align:center;vertical-align:top}
+</style>
 </head>
 
 <body style="margin-left: 150px; margin-top: 80px">
@@ -78,52 +84,82 @@
           </div>
           <div class="row">
             <div class="col-md-12">
-              <p class="lead">&nbsp; &nbsp; &nbsp; &nbsp;Selamat Datang Partner-xxx</p>
+              <?php 
+                    foreach ($partner as $p ) { 
+              ?>
+              <p class="lead">&nbsp; &nbsp; &nbsp; &nbsp;Selamat Datang <?php echo $p->nama?></p>
+              <?php }?>
             </div>
           </div>
           <div class="row">
             <div class="col-md-12 pl-4">
-              <p class="lead" style="font-family: arial; font-size: 15px">&nbsp; &nbsp; &nbsp; &nbsp;Stock Pada Awal Hari Ini : </p>
+              <p class="lead" style="font-family: arial; font-size: 15px">&nbsp; &nbsp; &nbsp; &nbsp;Stock saat ini : </p>
             </div>
           </div>
           <div class="row">
             <div class="col-md-12 pb-3 pl-4">
-              <p class="lead" style="font-family: arial; font-size: 15px">&nbsp; &nbsp; &nbsp; &nbsp;Stock Pada Akhir Hari Ini : </p>
+                
+                <table class="tg" style="undefined;table-layout: fixed; width: 219px; margin-left: 25px">
+                <colgroup>
+                <col style="width: 91px">
+                <col style="width: 128px">
+                </colgroup>
+                  <tr>
+                    <th class="tg-baqh" colspan="2">Rasa</th>
+                  </tr>
+                  <tr>
+                    <td class="tg-baqh">Lemon</td>
+                    <td class="tg-baqh">Blackcurrant<br></td>
+                  </tr>
+                  <tr>
+                    <?php 
+                      foreach ($stockLemon as $l ) { 
+                    ?>
+                    <td class="tg-baqh"><?php echo $l->stock1;?> Stock</td>
+                    <?php }?>
+                    <?php 
+                      foreach ($stockblack as $b ) { 
+                    ?>
+                    <td class="tg-baqh"><?php echo $b->stock1;?> Stock</td>
+                    <?php }?>
+                  </tr>
+                </table>
+
+
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-12">
-              <p class="lead">&nbsp; &nbsp; &nbsp; &nbsp;Rasa</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 pb-3">
-              <div class="btn-group btn-group-lg pl-4">
-                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Pilih Rasa</button>
-                <div class="dropdown-menu"> <a class="dropdown-item" href="#">Rasa</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Rasa</a>
+          <form method="POST" action="<?php echo base_url(). 'index.php/partnerController/updatestock'; ?>">
+            <div class="row" col-md-12>
+                  <label style="font-size: 20px; margin-left: 59px">Rasa : </label>
+                  <select class="form-control" id="rasa" name="rasa" style="width: 215px; margin-left: 20px">
+                    <option selected="true" disabled="disabled">Pilih Rasa</option>
+                    <?php 
+                      foreach ($stock as $s ) { 
+                    ?>
+                    
+                    <option value="<?php echo $s->rasa;?>"><?php echo $s->rasa;?></option>
+                    
+                    <?php
+                      }
+                    ?>
+                  </select>
                 </div>
+            <div class="row">
+              <div class="form-group row"> 
+                <label for="pass" style="font-size: 20px; margin-top: 10px; margin-right: 600px; margin-left: 75px">Jumlah yang Terjual</label>
+                  <div class="col-10 col-md-4" style="">
+                    <input type="number" class="form-control" name="jml" id="jml" placeholder="Jumlah stock" style="margin-left: 59px">
+                  </div>
+                </div>
+            </div>
+            <div class="col-10 col-md-2" style="">
+                <button class="btn btn-primary btn-block shadow" type="submit" style="margin-left: 200px">Submit</button>
               </div>
-            </div>
-          </div>
+          </form>
           <div class="row">
-            <div class="col-md-12">
-              <p class="lead">&nbsp; &nbsp; &nbsp; &nbsp;Jumlah yang Terjual</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 pb-2">
-              <form class="form-inline">
-                <div class="input-group input-group-lg pl-4">
-                  <input type="text" class="form-control pl-4">
-                </div>
-              </form>
-            </div>
           </div>
           <div class="row">
             <div class="col-md-3"></div>
-            <div class="col-md-3"><a class="btn btn-primary shadow" href="#">Submit</a></div>
             <div class="col-md-3"></div>
             <div class="col-md-3"></div>
           </div>

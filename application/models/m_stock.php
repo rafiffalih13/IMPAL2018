@@ -27,6 +27,18 @@
 			$this->db->delete('penjualan');
         }
 
-        
+        public function edit($namatoko, $jumlah, $rasa){
+        	$this->db->query("UPDATE penjualan SET stock1='$jumlah' WHERE namatoko='$namatoko' AND rasa='$rasa'");
+        }
+
+        public function get_stock_lemon($namatoko){
+        	$query = $this->db->query("SELECT * FROM penjualan WHERE namatoko='$namatoko' AND rasa='Lemon';");
+			return $query->result();
+        }
+
+        public function get_stock_black($namatoko){
+        	$query = $this->db->query("SELECT * FROM penjualan WHERE namatoko='$namatoko' AND rasa='Blackcurrant';");
+			return $query->result();
+        }
  	}
 ?>

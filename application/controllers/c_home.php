@@ -27,22 +27,22 @@
 			redirect('c_deletepartner/index');
 		}
 		public function editpartner(){
-			$this->load->view('v_editpartner');
+			redirect('c_editpartner/index');
 		}
 		public function inputpartner(){
 			redirect('c_inputpartner/index');
 		}
 		public function updatestock(){
-			$this->load->view('v_updatestock');
+			redirect('c_updatestock/index');
 		}
 		public function updatestockpar(){
-			$this->load->view('v_updatestockpar');
+			redirect('partnerController/v_updatestockpar');
 		}
 		public function lihatstock(){
-			$this->load->view('v_lihatstock');
+			redirect('pemilikController/v_lihatstock');
 		}
 		public function lihatstockpar(){
-			$this->load->view('v_lihatstockpar');
+			redirect('partnerController/v_lihatstockpar');
 		}
 	}
 ?>
