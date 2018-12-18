@@ -44,5 +44,15 @@
 		public function lihatstockpar(){
 			redirect('partnerController/v_lihatstockpar');
 		}
+
+		public function admininputstock(){
+			redirect('adminController/v_inputstock');
+		}
+		public function admineditpartner(){
+			redirect('adminController/v_editpartner');
+		}
+		public function adminlihatstock(){
+			redirect('adminController/v_lihatstock');
+		}
 	}
 ?>

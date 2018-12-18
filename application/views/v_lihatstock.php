@@ -104,7 +104,7 @@
               </form>
 
             </div>
-            <div class="col-md-3">
+            <div class="col-md-5">
               <?php
                 if ($title='1') {
                   include_once 'tabelview.php';

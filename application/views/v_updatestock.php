@@ -83,7 +83,7 @@
           <div class="row">
             <div class="col-md-12 pb-5">
               <div class="btn-group btn-group-lg pl-4">
-                <form method="POST" action="<?php echo base_url(). 'index.php/c_updatestock/update'; ?>">
+                <form method="POST" action="<?php echo base_url(). 'index.php/pemilikController/c_updatestock'; ?>">
                   <div class="row" col-md-12>
                     <label style="font-size: 20px">Toko : </label>
                     <select class="form-control" id="toko" name="toko" style="width: 200px; margin-left: 20px">
